@@ -72,7 +72,11 @@
 //Section review
 
 .bg-review {
-  background-image: url("./assets/img/bg-review.jpg");
+  background-image: url("./assets/img/bg-testi.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-reivew {
