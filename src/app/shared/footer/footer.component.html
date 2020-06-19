@@ -1,0 +1,137 @@
+<div class="footer-carousel">
+  <div class="container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img class="slider-img" src="{{ slide.img }}" alt="">
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
+<section class="section-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 footer-contact">
+          <div class="contact-icon">
+            <i class="fab fa-dribbble"></i>
+          </div>
+          <h6 class="contact-title">Easy to Customize</h6>
+        </div>
+        <div class="col-3 footer-contact">
+          <div class="contact-icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h6 class="contact-title">Fully Responsive
+          </h6>
+        </div>
+        <div class="col-3 footer-contact">
+          <div class="contact-icon">
+            <i class="far fa-envelope"></i>
+          </div>
+          <h6 class="contact-title">24/7 Online Support</h6>
+        </div>
+        <div class="col-3 footer-contact">
+          <div class="contact-icon">
+            <i class="fas fa-cloud-download-alt"></i>
+          </div>
+          <h6 class="contact-title">Free Updates Avalilable
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="footer-introduct">
+            <a href="#" class="navbar-brand"><img src="./assets/img/logo-light.png" class="header-logo" alt=""></a>
+            <p class="introduct-text">Nor again is there anyone who loves or pursues or desires to obtain pain of
+              itself pleasure.</p>
+            <div class="introduct-list">
+              <ul class="list-social">
+                <li class="list-icon"><a class="list-link" href="#"><i class="fab fa-facebook-f first-icon"></i></a>
+                </li>
+                <li class="list-icon"><a class="list-link" href="#"><i class="fab fa-vimeo-v first-icon"></i></a></li>
+                <li class="list-icon"><a class="list-link" href="#"><i class="fab fa-dribbble first-icon"></i></a></li>
+                <li class="list-icon"><a class="list-link" href="#"><i class="fab fa-instagram first-icon"></i></a></li>
+                <li class="list-icon"><a class="list-link" href="#"><i class="fab fa-twitter first-icon"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer-col">
+            <h4 class="footer-title">Features</h4>
+            <ul class="footer-list">
+              <li class="footer-item"><a class="footer-link" href=""><i class="fas fa-angle-right"></i> About
+                  us</a></li>
+              <li class="footer-item"><a class="footer-link" href=""><i class="fas fa-angle-right"></i>
+                  Services</a></li>
+              <li class="footer-item"><a class="footer-link" href=""><i class="fas fa-angle-right"></i> Faq’s</a>
+              </li>
+              <li class="footer-item"><a class="footer-link" href=""><i class="fas fa-angle-right"></i> Team</a>
+              </li>
+              <li class="footer-item"><a class="footer-link" href=""><i class="fas fa-angle-right"></i> Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="footer-col">
+            <h4 class="footer-title">Recent News
+            </h4>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fab fa-twitter"></i> " Many desktop publishing
+                  packages and web page editors now use Lorem Ipsum " </p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fab fa-twitter"></i>" Various versions have evolved over the
+                  years, sometimes by accident "
+                </p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fab fa-twitter"></i>" Many desktop publishing packages and web
+                  page editors now use Lorem Ipsum "
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="footer-col">
+            <h4 class="footer-title">Get in touch
+            </h4>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fas fa-map-marker-alt"></i> 3/2/64 Mongus Street, UK
+                </p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fas fa-envelope"></i> name@domain.com
+                </p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fas fa-mobile"></i> +(125) 215-4561
+                </p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fab fa-twitter"></i> yourname_tweet
+                </p>
+              </li>
+              <li class="footer-item">
+                <p class="footer-link" href=""><i class="fas fa-globe-asia"></i> www.yourdomain.com
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <p class="footer-copyright">© 2019-20 Promize. From denhi with <i class="fas fa-heart text-danger"></i></p>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+.navbar {
+  @extend %d-flex-between;
+  border-radius: .25rem;
+  .nav {
+    display: flex;
+  }
+  .navbar-collapse {
+    @extend %d-flex-between;
+  }
+  .navbar-brand {
+    display: inline-block;
+    padding: 1.45rem 0;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,201 @@
+//Card-1
+.card-service {
+  @include pxRem(margin-bottom, 24);
+  .card-aricle {
+    @include pxRem(padding, 24);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    text-align: center;
+    .card-img > i {
+      @include pxRem(font-size, 36);
+    }
+    .card-content {
+      @include pxRem(margin-top, 16);
+      .card-title {
+        @include pxRem(margin-bottom, 8);
+        @include pxRem(font-size, 18);
+        font-family: "Raleway", sans-serif;
+        line-height: 1.5;
+      }
+      .card-text {
+        @include pxRem(padding-bottom, 16);
+        @include pxRem(letter-spacing, 1);
+        line-height: 1.8;
+      }
+    }
+  }
+}
+.card-img-icon {
+  @include pxRem(height, 70);
+}
+//Card-2
+.price-table {
+  text-align: center;
+  background-color: #f8f8f8;
+  .price-header {
+    @include pxRem(padding, 48 0);
+    color: #ffffff;
+    background-color: #3e3e3e;
+    & > i {
+      @include pxRem(font-size, 34);
+    }
+    .price-title {
+      @include pxRem(margin-top, 16);
+      @include pxRem(font-size, 18);
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .price-content {
+      color: #aeaeae;
+      letter-spacing: 0.03em;
+      line-height: 1.8;
+    }
+  }
+  .price-value {
+    @include pxRem(padding, 24 0);
+    text-align: center;
+    background-color: #ececeb;
+    .price-number {
+      @include pxRem(font-size, 30);
+      font-family: "Raleway", sans-serif;
+    }
+    & > span {
+      color: #000000;
+    }
+  }
+  .price-text {
+    @include pxRem(padding, 24 24 24 48);
+    text-align: left;
+    .price-list {
+      .price-note {
+        @include pxRem(padding, 10 0);
+        @include pxRem(font-size, 14);
+        & > i {
+          @include pxRem(margin-right, 16);
+        }
+      }
+    }
+  }
+  .price-button {
+    @include pxRem(padding, 24);
+    border-top: 1px solid #dee2e6;
+    .btn-buy {
+      @include pxRem(border-radius, 20);
+    }
+  }
+}
+.value-custom,
+.button-custom {
+  @include pxRem(padding, 48 0 !important);
+}
+.header-custom {
+  background-color: #1abc9c !important;
+  .price-content {
+    color: #ffffff !important;
+  }
+}
+// .item-center {
+//   -ms-flex-align: center!important;
+//   align-items: center!important;
+// }
+.col-custom {
+  @include pxRem(margin-top, -48);
+}
+.card-price {
+  margin-top: 120px;
+}
+
+//Card-user
+.member-img {
+  width: 100%;
+}
+.team-member {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  .member-info {
+    @include pxRem(padding, 16 8);
+    text-align: center;
+    .dicription {
+      @include pxRem(line-height, 25);
+      color: #6c757d;
+    }
+    .list-social {
+      @include pxRem(margin-top, 16);
+      display: inline-flex;
+      & > li > a {
+        @include pxRem(margin-right, 5);
+        @include pxRem(font-size, 15);
+        color: #adb5bd;
+        border: 1px solid #adb5bd;
+        display: inline-block;
+        height: 32px;
+        text-align: center;
+        width: 32px;
+        border-radius: 50px;
+        & > i {
+          @include pxRem(padding, 7 0 0 1);
+          &:hover {
+            color: #3e3e3e;
+          }
+        }
+      }
+    }
+    & > small,
+    i {
+      color: #1abc9c;
+    }
+    & > h4 {
+      @include pxRem(margin, 16 0);
+      font-family: "Raleway", sans-serif;
+    }
+  }
+}
+//Card-news
+.post-img {
+  width: 100%;
+}
+.aricle-post {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  .post-preview {
+    position: relative;
+    .post-date {
+      @include pxRem(padding, 5 0);
+      @include pxRem(width, 60);
+      @include pxRem(font-size, 20);
+      @include pxRem(border-radius, 5);
+      position: absolute;
+      background: #3e3e51;
+      left: 20px;
+      bottom: -30px;
+      color: white;
+      text-align: center;
+    }
+  }
+  .post-text {
+    @include pxRem(padding, 40 20 20);
+    .post-title {
+      @include pxRem(margin-bottom, 8);
+      font-family: "Raleway", sans-serif;
+    }
+    .post-content {
+      @include pxRem(font-size, 14);
+      @include pxRem(margin-bottom, 8);
+    }
+    .read-more {
+      @include pxRem(margin-bottom, 16);
+      & > a > i {
+        @include pxRem(font-size, 13);
+        @include pxRem(margin-left, 8);
+      }
+    }
+    .footer-list {
+      @include pxRem(padding-top, 15);
+      @extend %d-flex-between;
+      border-top: 1px solid #dee2e6;
+      & > li > i {
+        @include pxRem(margin-right, 8);
+        @include pxRem(font-size, 14);
+      }
+  }
+  }
+}
