@@ -90,6 +90,7 @@ $enable-deprecation-messages:                 true !default;
 
 // == Breakpoints ===
 $breakpoints: (
+  smallest: 320px,
   small: 480px,
   medium: 768px,
   wide: 960px,

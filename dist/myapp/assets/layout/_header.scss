@@ -1,0 +1,32 @@
+.header-hidden,
+.top-socials {
+  @extend %d-flex-between;
+}
+.header-top {
+  @include pxRem(padding, 8 0);
+  background-color: #1b263a;
+}
+.header-icon {
+  @include pxRem(padding-right, 10);
+  font-size: 13px;
+  color: white;
+  > i {
+    @include pxRem(margin-right, 8);
+    font-size: 13px;
+  }
+}
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.nav-item > a {
+  @include pxRem(padding, 20 15);
+  color: #3e3e3e;
+  font-size: 12px;
+}
+.header-logo {
+  height: 18px;
+}
