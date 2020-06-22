@@ -23,6 +23,7 @@ $container-width: 1140px;
   padding-right: $grid-gutter;
   margin: 0 auto;
   max-width: $container-width;
+  overflow: hidden;
 }
 .row {
   @extend %clr;
@@ -81,7 +82,5 @@ $container-width: 1140px;
   @extend %clr;
   margin: 0 auto;
   max-width: 100%;
-  // .row > [class*=col-] {
-  //   padding: 0;
-  // }
+  overflow: hidden;
 }
