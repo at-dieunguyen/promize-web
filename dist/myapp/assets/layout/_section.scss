@@ -1,8 +1,8 @@
-.section-list {
-  margin: 0 -15px;
-  .section-left-img {
-    width: 100%;
-  }
+.section-left-img {
+  width: 100%;
+}
+.no-padding {
+  padding: 0 !important;
 }
 .section-right {
   @include pxRem(padding, 45);

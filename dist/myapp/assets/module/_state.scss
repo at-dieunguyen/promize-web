@@ -1,3 +1,6 @@
 .section {
   @include pxRem(padding, 100 0);
 }
+.item-center {
+  @include pxRem(margin-top, 110);
+}

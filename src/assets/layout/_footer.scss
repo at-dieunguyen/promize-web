@@ -11,8 +11,9 @@
 .section-footer {
   background-color: #3e3e3e;
   .footer-top {
-    @include pxRem(padding, 40 0);
+    @include pxRem(padding, 32 0);
     .footer-contact {
+    @include pxRem(margin, 8 0);
       display: flex;
       color: #adb5bd;
       align-items: center;

@@ -27,7 +27,33 @@ export class FooterComponent implements OnInit {
   ];
   slideConfig = {
     "slidesToShow": 6, "slidesToScroll": 1, "autoplay": true, "infinite": true,
-    "autoplaySpeed": 1500
+    "autoplaySpeed": 1500,
+    "responsive": [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   };
 
   slickInit(e) {
