@@ -175,6 +175,7 @@
     @include pxRem(padding, 40 20 20);
     .post-title {
       @include pxRem(margin-bottom, 8);
+      @include pxRem(font-size, 16 !important);
       font-family: "Raleway", sans-serif;
     }
     .post-content {
