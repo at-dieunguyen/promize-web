@@ -1,5 +1,6 @@
 .header-hidden,
 .top-socials {
+  @include pxRem(margin-bottom, 0);
   @extend %d-flex-between;
 }
 .header-top {
@@ -27,6 +28,9 @@
   color: #3e3e3e;
   font-size: 12px;
 }
-.header-logo {
+.img-logo {
+  height: 65px;
+}
+.img-logo-light {
   height: 18px;
 }

@@ -1,11 +1,17 @@
 .navbar {
+  @include pxRem(padding, 0 !important);
   @extend %d-flex-between;
+  align-items: center;
   border-radius: .25rem;
   .nav {
     display: flex;
   }
   .navbar-collapse {
     @extend %d-flex-between;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end !important;
   }
   .navbar-brand {
     display: inline-block;
@@ -14,3 +20,4 @@
     font-size: 1.25rem;
   }
 }
+
