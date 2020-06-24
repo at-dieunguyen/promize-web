@@ -22,6 +22,13 @@
         line-height: 1.8;
         color: #6c757d;
       }
+      .read-more > a {
+        text-decoration: none;
+        color: #000000;
+        &:hover {
+          color: #1abc9c;
+        }
+      }
     }
   }
 }
@@ -146,6 +153,7 @@
       color: #1abc9c;
     }
     & > h4 {
+      @include pxRem(font-size, 16);
       @include pxRem(margin, 16 0);
       font-family: "Raleway", sans-serif;
     }
@@ -185,19 +193,34 @@
     }
     .read-more {
       @include pxRem(margin-bottom, 16);
-      & > a > i {
-        @include pxRem(font-size, 13);
-        @include pxRem(margin-left, 8);
+      & > a {
+        text-decoration: none;
+        color: #000000;
+        &:hover {
+          color: #1abc9c;
+        }
+        > i {
+          @include pxRem(font-size, 13);
+          @include pxRem(margin-left, 8);
+        }
       }
     }
     .footer-list {
       @include pxRem(padding-top, 15);
       @extend %d-flex-between;
       border-top: 1px solid #dee2e6;
+      & > li > a {
+        @include pxRem(font-size, 14);
+        color: #000000;
+        &:hover {
+          text-decoration: none;
+          color: #1abc9c;
+        }
+      }
       & > li > i {
         @include pxRem(margin-right, 8);
         @include pxRem(font-size, 14);
       }
-  }
+    }
   }
 }

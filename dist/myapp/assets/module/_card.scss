@@ -20,6 +20,7 @@
         @include pxRem(padding-bottom, 16);
         @include pxRem(letter-spacing, 1);
         line-height: 1.8;
+        color: #6c757d;
       }
     }
   }
@@ -145,6 +146,7 @@
       color: #1abc9c;
     }
     & > h4 {
+      @include pxRem(font-size, 16);
       @include pxRem(margin, 16 0);
       font-family: "Raleway", sans-serif;
     }

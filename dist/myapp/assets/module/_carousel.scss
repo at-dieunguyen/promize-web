@@ -20,6 +20,16 @@
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
+  width: 100%;
+  padding-top: 50%;
+  .img-banner {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .carousel-item.active,
