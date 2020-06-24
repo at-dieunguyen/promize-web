@@ -82,8 +82,8 @@
   }
 }
 .btn-custom-2 {
-  @include pxRem(font-size, 13);
-  @include pxRem(padding, 10 18);
+  @include pxRem(font-size, 13 !important);
+  @include pxRem(padding, 10 24 !important);
   text-transform: uppercase;
 }
 .btn-custom-outline {
@@ -101,16 +101,15 @@
   }
 }
 .btn-custom-outline-dark {
-  @include pxRem(margin, 8);
-  @include pxRem(padding, 10 24);
-  @include pxRem(font-size, 13);
+  @include pxRem(padding, 10 24 !important);
+  @include pxRem(font-size, 13 !important);
   border: 1px solid #343a40 !important;
   color: #343a40;
   background-color: transparent;
   text-transform: uppercase;
   &:hover {
     outline: none;
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: #343a40;
     border-color: #343a40 !important;
   }
