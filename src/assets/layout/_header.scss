@@ -11,6 +11,9 @@
   @include pxRem(padding-right, 10);
   font-size: 13px;
   color: white;
+  &:hover {
+    color: #1abc9c;
+  }
   > i {
     @include pxRem(margin-right, 8);
     font-size: 13px;
@@ -27,9 +30,19 @@
   @include pxRem(padding, 20 15);
   color: #3e3e3e;
   font-size: 12px;
+  i {
+    @include pxRem(font-size, 12);
+    &:hover {
+      color: #1abc9c;
+    }
+  }
+  &:hover {
+    color: #3e3e3e;
+    text-decoration: none;
+  }
 }
 .img-logo {
-  height: 65px;
+  height: 32px;
 }
 .img-logo-light {
   height: 18px;

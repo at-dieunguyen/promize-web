@@ -111,6 +111,7 @@
     text-align: center !important;
   }
   .nav {
+    @include pxRem(margin-top, 5);
     width: 100%;
     .dropdown-toggle::after {
       position: absolute;
@@ -120,6 +121,14 @@
   }
   .dropdown {
     @include pxRem(padding, 8 0 !important);
+  }
+  header {
+    position: fixed !important;
+    width: 100%;
+    top: 0 !important;
+  }
+  .dropdown-item {
+    font-size: 14px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 960px) {
