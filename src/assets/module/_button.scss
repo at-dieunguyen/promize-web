@@ -114,3 +114,35 @@
     border-color: #343a40 !important;
   }
 }
+.btn-group {
+  @include pxRem(margin, 0 -15);
+  .btn-aricle {
+    @include pxRem(padding, 7 16);
+    @include pxRem(margin, 0 8 8 0);
+    @include pxRem(font-size, 10);
+    @include pxRem(border-radius, 3);
+    background-color: #aeaeae;
+    outline: none;
+    color: #ffffff;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    border: none;
+  }
+}
+.btn-tag {
+  @include pxRem(padding, 8);
+  @include pxRem(margin, 5 10 5 0);
+  @include pxRem(font-size, 9);
+  @include pxRem(border-radius, 3);
+  background-color: #e9ecef;
+  outline: none;
+  color: #3e3e3e;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+  }
+}
