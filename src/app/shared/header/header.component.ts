@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComonService } from 'src/app/core/comon.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  isHome: false;
+  constructor(private comonservice: ComonService,) { }
 
   ngOnInit(): void {
+    this.comonservice.headerStatus.subscribe(status => {
+      this.isHome = status;
+      console.log(this.isHome);
+      
+    })
   }
 
 }

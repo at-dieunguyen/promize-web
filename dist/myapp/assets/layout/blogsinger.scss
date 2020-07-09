@@ -1,0 +1,294 @@
+.page-banner {
+  @include pxRem(padding, 78 0);
+  background-image: url("./assets/img/bg-default.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .banner {
+    @extend %d-flex-between;
+    .page-title-category {
+      @include pxRem(font-size, 24);
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      color: #ffffff;
+    }
+    .blog-breadcrum {
+      @extend %d-flex;
+      .breadcrum-list {
+        > a {
+          color: #ffffff;
+          &:hover {
+            text-decoration: none;
+            color: #1abc9c;
+          }
+        }
+        &:last-child {
+          @include pxRem(font-size, 15);
+          color: #1abc9c;
+        }
+      }
+      > li + li:before {
+        @include pxRem(font-size, 13);
+        @include pxRem(padding, 8);
+        content: "\f105";
+        font-size: 13px;
+        color: #ffffff;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+      }
+    }
+  }
+}
+.page-aricle {
+  @include pxRem(margin-bottom, 100);
+}
+.aricle-img {
+  width: 100%;
+}
+.page-main {
+  @include pxRem(padding-top, 100);
+}
+.aricle-content {
+  @include pxRem(padding, 20 0);
+  .post-list {
+    @include pxRem(font-size, 14);
+    @extend %d-flex;
+    .list-item {
+      @include pxRem(margin-right, 16);
+      font-family: "Raleway", sans-serif;
+      > a {
+        @include pxRem(font-size, 14);
+        color: #3e3e3e;
+        font-family: "Raleway", sans-serif;
+        &:hover {
+          text-decoration: none;
+          color: #1abc9c;
+        }
+      }
+      > i {
+        @include pxRem(margin-right, 10);
+      }
+    }
+  }
+}
+.text-content {
+  color: #6c757d;
+}
+.blockquote {
+  @include pxRem(padding, 24);
+  border-left: 5px solid #1abc9c;
+  border-radius: 5px;
+}
+
+.post-related {
+  @include pxRem(margin-top, 48);
+  .related-title {
+    @include pxRem(padding-bottom, 16);
+    @include pxRem(font-size, 18);
+    font-family: "Raleway", sans-serif;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .card-news {
+    @include pxRem(margin-top, 24);
+  }
+}
+//Section comment
+.comment-list-item {
+  @include pxRem(margin-top, 24);
+  @extend %d-flex;
+  align-items: normal;
+  .avt-user {
+    @include pxRem(margin-right, 16);
+    @include pxRem(margin-top, 8);
+    @include pxRem(min-width, 80);
+    @include pxRem(min-height, 80);
+    .avt-user-comment {
+      @include pxRem(width, 80);
+      @include pxRem(padding, 4);
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 50%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .comment-title {
+    .comment-user-name {
+      @include pxRem(font-size, 16);
+      color: #3e3e3e;
+      font-family: "Raleway", sans-serif;
+    }
+    .comment-repply {
+      float: right;
+      color: #007bff;
+      text-decoration: none;
+      i {
+        @include pxRem(margin-right, 8);
+        color: #007bff;
+      }
+      &:hover {
+        color: #1abc9c;
+        i {
+          color: #1abc9c;
+        }
+      }
+    }
+    small {
+      @include pxRem(font-size, 14.4);
+      color: #6c757d;
+    }
+  }
+  .comment-text {
+    @include pxRem(margin-top, 8);
+    @include pxRem(padding, 20 25);
+    @include pxRem(border-radius, 4);
+    color: #3e3e3e;
+    background: #f8f9fa;
+    font-style: italic;
+  }
+}
+//Section leave comment
+.form {
+  @include pxRem(margin-top, 24);
+  .form-comment {
+    @include pxRem(margin-bottom, 24);
+    .btn-comment {
+      @include pxRem(padding, 10 12);
+      width: 100%;
+      background-color: #1abc9c;
+      outline: none;
+      border-radius: 4px;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: 0.7px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #3e3e3e;
+      }
+    }
+  }
+}
+.comment-input {
+  @include pxRem(border-radius, 4);
+  @include pxRem(padding, 6 12);
+  @include pxRem(font-size, 14);
+  width: 100%;
+  outline: none;
+  border: 2px solid #dee2e6;
+  &:focus {
+    outline: none;
+  }
+}
+//Sidebar widget search
+.widge {
+  .widge-title {
+    @include pxRem(margin-bottom, 24);
+    @include pxRem(padding, 8 0);
+    @include pxRem(font-size, 13);
+    @include pxRem(letter-spacing, 0.8);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  .form-search {
+    position: relative;
+    .search-input {
+      @include pxRem(margin-bottom, 48);
+    }
+    i {
+      position: absolute;
+      top: 13px;
+      right: 16px;
+      font-size: 13px;
+    }
+  }
+}
+//Sidebar widge category
+.category-list {
+  @include pxRem(padding-bottom, 10);
+  @extend %d-flex-between;
+  .category-item {
+    @include pxRem(font-size, 14);
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 14px;
+  }
+  span {
+    @include pxRem(font-size, 14);
+    color: #3e3e3e;
+  }
+}
+//Sidebar widge flickr
+.widge-flickr {
+  @include pxRem(margin-bottom, 33);
+}
+.item-img {
+  @include pxRem(padding, 15);
+  .img-flickr {
+    width: 100%;
+  }
+}
+//Sidebar widge recent
+.post-recent {
+  @include pxRem(padding-bottom, 15);
+  display: flex;
+  .recent-img {
+    @include pxRem(margin-right, 10);
+    @include pxRem(border-radius, 5);
+    width: 25%;
+  }
+  .recent-text {
+    .recent-title {
+      @include pxRem(font-size, 15);
+      display: block;
+      color: #3e3e3e;
+      &:hover {
+        text-decoration: none;
+        color: #1abc9c;
+      }
+    }
+    .recent-date {
+      @include pxRem(font-size, 13);
+    }
+  }
+}
+//Sidebar widge form
+.form-control {
+  @include pxRem(margin-bottom, 8);
+}
+//Sidebar widge addver
+.img-spot {
+  width: 100%;
+}
+.social-tag {
+  width: 100%;
+  justify-content: center;
+  .list-link {
+    border-color: #3e3e3e !important;
+    &:hover {
+      border-color: #1abc9c !important;
+      i {
+        color: #1abc9c !important;
+      }
+    }
+    i {
+      color: #3e3e3e !important;
+    }
+  }
+}
+@media (min-width: 200px) and (max-width: 767px) {
+  .banner {
+    display: block !important;
+    text-align: center;
+    .blog-breadcrum {
+      justify-content: center;
+      .breadcrum-list {
+        font-size: 16px !important;
+      }
+    }
+  }
+}

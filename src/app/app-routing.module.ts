@@ -15,6 +15,10 @@ const routes: Routes = [
     {
       path: 'blogsingger',
       loadChildren: () => import('./shared/blog-singger/blog-singger.module').then(m => m.BlogSinggerModule)
+    },
+    {
+      path: 'blogtwocolumn',
+      loadChildren: () => import('./shared/blog-twocolumn/blog-twocolumn.module').then(m => m.BlogTwocolumnModule)
     }
 ];
 

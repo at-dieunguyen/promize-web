@@ -10,6 +10,16 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    z-index: 9;
+  }
 }
 
 .carousel-item {
@@ -83,7 +93,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 11 !important;
   // Use flex for alignment (1-3)
   display: flex; // 1. allow flex styles
   align-items: center; // 2. vertically center contents

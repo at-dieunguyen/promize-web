@@ -1,4 +1,4 @@
-<div class="header-top">
+<div class="header-top" *ngIf="isHome">
   <div class="container">
     <div class="header-hidden">
       <div class="login">
@@ -68,12 +68,8 @@
                 BLOG & NEWS
               </a>
               <div class="dropdown-menu">
-                <a href="" class="dropdown-item">Blog 2 column</a>
+                <a href="" class="dropdown-item" routerLink="/blogtwocolumn">Blog 2 column</a>
                 <a href="" class="dropdown-item" routerLink="/blogsingger">Singer Blog</a>
-                <a href="" class="dropdown-item">Blog 4 column</a>
-                <a href="" class="dropdown-item">Left Sidebar</a>
-                <a href="" class="dropdown-item">Right Sidebar</a>
-                <a href="" class="dropdown-item">Full width</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -81,9 +77,9 @@
                 SHORTCODE
               </a>
               <div class="dropdown-menu">
-                <a href="" class="dropdown-item">Blog 2 column</a>
-                <a href="" class="dropdown-item">Blog 3 column</a>
-                <a href="" class="dropdown-item">Blog 4 column</a>
+                <a href="" class="dropdown-item">Blog</a>
+                <a href="" class="dropdown-item">Blog</a>
+                <a href="" class="dropdown-item">Blog</a>
                 <a href="" class="dropdown-item">Left Sidebar</a>
                 <a href="" class="dropdown-item">Right Sidebar</a>
                 <a href="" class="dropdown-item">Full width</a>

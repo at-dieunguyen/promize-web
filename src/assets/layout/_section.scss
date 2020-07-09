@@ -107,6 +107,9 @@
 }
 
 @media (min-width: 200px) and (max-width: 767px) {
+  .page-banner {
+    @include pxRem(margin-top, 56);
+  }
   .intro-contact {
     text-align: center !important;
   }
@@ -132,6 +135,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 960px) {
+  .page-banner {
+    @include pxRem(margin-top, 56);
+  }
   .nav {
     width: 100%;
     .dropdown {
@@ -142,5 +148,16 @@
       right: 8px;
       top: 15px;
     }
+  }
+  .dropdown {
+    @include pxRem(padding, 8 0 !important);
+  }
+  header {
+    position: fixed !important;
+    width: 100%;
+    top: 0 !important;
+  }
+  .dropdown-item {
+    font-size: 14px !important;
   }
 }
