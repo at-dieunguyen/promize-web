@@ -19,7 +19,12 @@ const routes: Routes = [
     {
       path: 'blogtwocolumn',
       loadChildren: () => import('./shared/blog-twocolumn/blog-twocolumn.module').then(m => m.BlogTwocolumnModule)
+    },
+    {
+      path: 'shopcart',
+      loadChildren: () => import('./shared/shop-cart/shop-cart.module').then(m => m.ShopCartModule)
     }
+
 ];
 
 @NgModule({

@@ -1,0 +1,140 @@
+<div class="page-banner">
+  <div class="container">
+    <div class="banner">
+      <h1 class="page-title-category">Cart</h1>
+      <ul class="blog-breadcrum">
+        <li class="breadcrum-list">
+          <a href="">Home</a>
+        </li>
+        <li class="breadcrum-list">
+          <a href="">Shop</a>
+        </li>
+        <li class="breadcrum-list">Shop Cart</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="cart">
+  <div class="container">
+    <table class="cart-table">
+      <tr class="table-row">
+        <th></th>
+        <th>Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+      <tr class="table-row" *ngFor="let pro of product">
+        <td>
+          <a href="">
+            <img [src]=pro.img alt="" class="img-product">
+          </a>
+        </td>
+        <td>{{ pro.name }}</td>
+        <td>${{ pro.price }}</td>
+        <td>{{ pro.quantity }}</td>
+        <td>{{ pro.total }}</td>
+        <td>
+          <a href=""><i class="fas fa-trash"></i></a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <div class="row table-more">
+            <div class="col-medium-6 col-smallest-12 table-more-apply ">
+              <form action="" class="form">
+                <div class="row">
+                  <div class="col-8">
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-4 form-comment">
+                    <button class="btn-comment">Apply Code</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-medium-6 col-smallest-12 table-more-apply">
+              <form action="" class="form">
+                <div class="row">
+                  <div class="col-2"></div>
+                  <div class="col-4 form-comment">
+                    <button class="btn-comment">More Shopping</button>
+                  </div>
+                  <div class="col-6 form-comment">
+                    <button class="btn-comment">Proceed To Checkout</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="cart-total">
+      <div class="main-typo">
+        <h2 class="typo-title total-title">Cart Total</h2>
+      </div>
+      <div class="row">
+        <div class="col-medium-6 col-smallest-12">
+          <table class="table-total">
+            <tr class="">
+              <td>Cart Subtotal </td>
+              <td>$ 1219.97</td>
+            </tr>
+            <tr class="">
+              <td>Shipping</td>
+              <td>Free Delivery</td>
+            </tr>
+            <tr class="">
+              <td>Total</td>
+              <td style="color: #1abc9c;">$ 1219.97</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="product-same">
+      <div class="main-typo">
+        <h2 class="typo-title total-title">YOU MAY BE INTERESTED IN… </h2>
+      </div>
+      <div class="cart-carousel">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+          (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+          (beforeChange)="beforeChange($event)">
+          <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <div class="row">
+              <div class="cart-carousel">
+                <a href="">
+                  <img class="slider-img" src="{{ slide.img }}" alt="">
+                </a>
+                <div class="product-detail">
+                  <div class="product">
+                    <a href="">
+                      <h6 class="product-name">{{ slide.name }}</h6>
+                      <p>$ {{slide.price}}</p>
+                    </a>
+                  </div>
+                  <div class="product">
+                    <div class="product-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <small class="text-muted">{{ slide.review }} Reviews</small>
+                  </div>
+                </div>
+                <div class="cart-button">
+                  <button class="btn-custom">Add Cart</button>
+                  <button class="btn-custom">View Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    </div>
+  </div>
+</section>
