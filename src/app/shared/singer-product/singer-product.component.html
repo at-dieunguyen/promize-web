@@ -1,0 +1,333 @@
+<div class="page-banner banner-pro-detail">
+  <div class="container">
+    <div class="banner">
+      <h1 class="page-title-category">Product detail</h1>
+      <ul class="blog-breadcrum">
+        <li class="breadcrum-list">
+          <a href="">Home</a>
+        </li>
+        <li class="breadcrum-list">
+          <a href="">Page</a>
+        </li>
+        <li class="breadcrum-list">Singer Product</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<main class="page-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="sidebar">
+          <div class="widge">
+            <h4 class="widge-title">Search</h4>
+            <div class="form-search">
+              <input type="text" placeholder="Search Keywords..."
+                class="search-input comment-input" /><i class="fas fa-search"
+                aria-hidden="true"></i>
+            </div>
+            <h4 class="widge-title">Category</h4>
+          </div>
+          <div class="widge">
+            <ul class="category">
+              <li class="category-list">
+                <a href="" class="category-item"><i
+                    class="fas fa-angle-right"></i>Finance</a><span>13</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i class="fas fa-angle-right"></i>Food</a><span
+                >10</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i
+                    class="fas fa-angle-right"></i>Business</a><span>08</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i class="fas fa-angle-right"></i>Blog</a><span
+                >18</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i
+                    class="fas fa-angle-right"></i>Corporate</a><span>22</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i
+                    class="fas fa-angle-right"></i>Sitemap</a><span>26</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i
+                    class="fas fa-angle-right"></i>Marketing</a><span>15</span>
+              </li>
+              <li class="category-list">
+                <a href="" class="category-item"><i
+                    class="fas fa-angle-right"></i>Investment</a><span>09</span>
+              </li>
+            </ul>
+          </div>
+          <div class="widge widge-flickr">
+            <h4 class="widge-title">Recent post</h4>
+            <div class="post-recent">
+              <img src="./assets/img/thumb-1.jpg" alt="" class="recent-img" />
+              <div class="recent-text">
+                <a href="" class="recent-title">Sony Speaker</a><span
+                  class="recent-date">$18
+                </span>
+              </div>
+            </div>
+            <div class="post-recent">
+              <img src="./assets/img/thumb-2.jpg" alt="" class="recent-img" />
+              <div class="recent-text">
+                <a href="" class="recent-title">Stool</a><span
+                  class="recent-date">$18
+                </span>
+              </div>
+            </div>
+            <div class="post-recent">
+              <img src="./assets/img/thumb-3.jpg" alt="" class="recent-img" />
+              <div class="recent-text">
+                <a href="" class="recent-title">Bags</a><span
+                  class="recent-date">$14
+                </span>
+              </div>
+            </div>
+            <div class="post-recent">
+              <img src="./assets/img/thumb-4.jpg" alt="" class="recent-img" />
+              <div class="recent-text">
+                <a href="" class="recent-title">Canon Camera</a><span
+                  class="recent-date">$35
+                </span>
+              </div>
+            </div>
+            <div class="post-recent">
+              <img src="./assets/img/thumb-5.jpg" alt="" class="recent-img" />
+              <div class="recent-text">
+                <a href="" class="recent-title">Bag</a><span
+                  class="recent-date">$12
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="product-main">
+          <div class="row">
+            <div class="col-6">
+              <div class="feedback-slides" style="width: 382px; margin-left: 16px">
+                <div class="client-feedback">
+                  <ngx-slick-carousel class="carousel feedback" #slickModal="slick-carousel" [config]="imagesSlider">
+                    <div ngxSlickItem *ngFor="let slide of slides" class="slide" style="margin: 0;">
+                      <img class="slide-parent" src="{{ slide.img }}" alt="" width="100%">
+                    </div>
+                  </ngx-slick-carousel>
+                </div>
+                <div class="client-thumbnails">
+                  <ngx-slick-carousel class="carousel thumbs" #slickModal="slick-carousel" [config]="thumbnailsSlider ">
+                    <div ngxSlickItem *ngFor="let slide of slides" class="slide"
+                      style="width: 128px; margin: 0; margin-top: 8px;">
+                      <img class="slide-children" src="{{ slide.img }}" alt="" width="100%">
+                    </div>
+                  </ngx-slick-carousel>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="product-detail">
+                <h3 class="pro-detail-name">Sony Speak</h3>
+                <div class="pro-detail-content">
+                  <h3 class="pro-detail-price">$18</h3>
+                  <div class="pro-detail-review">
+                    <div class="product-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <p class="pro-review-number">23 Reviews</p>
+                  </div>
+                </div>
+                <div class="pro-detail-text">
+                  <p class="text-content">Differ in their grammar their pronunciation and their most common words
+                    everyone realizes why a new common language would be translators.
+                  </p>
+                  <ul class="category">
+                    <li class="category-list">
+                      <a class="category-item detail-list" href=""><i class="fas fa-angle-right"></i>Differ in their
+                        grammar their
+                        pronunciation</a>
+                    </li>
+                    <li class="category-list">
+                      <a class="category-item detail-list" href=""><i class="fas fa-angle-right"></i>Pronunciation and
+                        their most
+                        common</a>
+                    </li>
+                    <li class="category-list">
+                      <a class="category-item detail-list" href=""><i class="fas fa-angle-right"></i>Words everyone
+                        realizes why a
+                        new common</a>
+                    </li>
+                    <li class="category-list">
+                      <a class="category-item detail-list" href=""><i class="fas fa-angle-right"></i>Common language
+                        would be
+                        translators</a>
+                    </li>
+                    <li class="category-list">
+                      <a class="category-item detail-list" href=""><i class="fas fa-angle-right"></i>Their most common
+                        words
+                        everyone realizes</a>
+                    </li>
+                  </ul>
+                  <div class="cart-button">
+                    <button class="btn-custom">Add Cart</button>
+                    <button class="btn-custom">View Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-same" style="margin: 32px 16px;">
+          <div class="main-typo">
+            <h2 class="typo-title total-title">RELATED ITEMS</h2>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="cart-carousel">
+                <a href="">
+                  <img class="slider-img" src="./assets/img/product-cart-7.jpg" style="width: 100%;" alt="">
+                </a>
+                <div class="product-block">
+                  <div class="product">
+                    <a href="">
+                      <h6 class="product-name">Casual Shoes</h6>
+                      <p>$18</p>
+                    </a>
+                  </div>
+                  <div class="product">
+                    <div class="product-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half "></i>
+                    </div>
+                    <small class="text-muted">24 Reviews</small>
+                  </div>
+                </div>
+                <div class="cart-button">
+                  <button class="btn-custom">Add Cart</button>
+                  <button class="btn-custom">View Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="cart-carousel">
+                <a href="">
+                  <img class="slider-img" src="./assets/img/product-cart-8.jpg" style="width: 100%;" alt="">
+                </a>
+                <div class="product-block">
+                  <div class="product">
+                    <a href="">
+                      <h6 class="product-name">Casual Shoes</h6>
+                      <p>$18</p>
+                    </a>
+                  </div>
+                  <div class="product">
+                    <div class="product-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <small class="text-muted">24 Reviews</small>
+                  </div>
+                </div>
+                <div class="cart-button">
+                  <button class="btn-custom">Add Cart</button>
+                  <button class="btn-custom">View Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="cart-carousel">
+                <a href="">
+                  <img class="slider-img" src="./assets/img/product-cart-10.jpg" style="width: 100%;" alt="">
+                </a>
+                <div class="product-block">
+                  <div class="product">
+                    <a href="">
+                      <h6 class="product-name">Casual Shoes</h6>
+                      <p>$18</p>
+                    </a>
+                  </div>
+                  <div class="product">
+                    <div class="product-icon">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                    </div>
+                    <small class="text-muted">24 Reviews</small>
+                  </div>
+                </div>
+                <div class="cart-button">
+                  <button class="btn-custom">Add Cart</button>
+                  <button class="btn-custom">View Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- <div class="row">
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-1.jpg" alt="">
+      <div class="text-hidden">
+        <h1>Dieu nguyen</h1>
+        <p>hihi</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-2.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-3.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-4.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-5.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-6.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-7.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-3">
+    <div  class="img-modal">
+      <img src="./assets/img/work-8.jpg" alt="">
+    </div>
+  </div>
+</div> -->
