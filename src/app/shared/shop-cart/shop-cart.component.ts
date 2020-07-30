@@ -76,7 +76,7 @@ export class ShopCartComponent implements OnInit {
     }
   ];
   slideConfig = {
-    "slidesToShow": 4, "slidesToScroll": 1, "autoplay": false, "infinite": true,
+    "slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "infinite": true,
     "autoplaySpeed": 1500,
     "responsive": [
       {

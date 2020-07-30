@@ -58,7 +58,7 @@ th {
   .slider-img {
     width: 100%;
   }
-  .product-detail {
+  .product-block {
     @include pxRem(padding, 16);
     @extend %d-flex-between;
     background-color: #f8f8f8;
