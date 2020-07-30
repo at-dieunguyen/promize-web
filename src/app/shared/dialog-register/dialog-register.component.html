@@ -5,29 +5,69 @@
       <span>x</span>
     </button>
   </div>
-  <form action="" class="form">
+  <form class="form" [formGroup]="registerForm">
     <div class="form-comment">
       <h6>First name</h6>
-      <input type="text" class="comment-input" placeholder="First Name">
+      <input formControlName="firstName" type="text" class="comment-input" placeholder="First Name">
+      <div *ngIf="
+                  registerForm.controls.firstName.invalid &&
+                  (registerForm.controls.firstName.touched ||
+                    registerForm.controls.firstName.dirty)">
+        <p class="message-error" *ngIf="registerForm.controls.firstName?.errors.required">
+          *First name is required!
+        </p>
+      </div>
     </div>
     <div class="form-comment">
       <h6>Email</h6>
-      <input type="text" class="comment-input" placeholder="Email">
+      <input formControlName="email" type="email" class="comment-input" placeholder="Email">
+      <div *ngIf="
+      registerForm.controls.email.invalid &&
+      (registerForm.controls.email.touched ||
+        registerForm.controls.email.dirty)">
+        <p class="message-error" *ngIf="registerForm.controls.email?.errors.required">
+          *Email is required!
+        </p>
+        <p class="message-error" *ngIf="registerForm.controls.email?.errors.email">
+          *Invalid email!
+        </p>
+      </div>
     </div>
     <div class="form-comment">
       <h6>Password</h6>
-      <input type="text" class="comment-input" placeholder="Password">
+      <input formControlName="password" type="password" class="comment-input" placeholder="Password">
+      <div *ngIf="
+      registerForm.controls.password.invalid &&
+      (registerForm.controls.password.touched ||
+        registerForm.controls.password.dirty)">
+        <p class="message-error" *ngIf="registerForm.controls.password?.errors.required">
+          *Password is required!
+        </p>
+      </div>
     </div>
     <div class="form-comment">
       <h6>Confirm Password</h6>
-      <input type="text" class="comment-input" placeholder="Password">
+      <input formControlName="confirmPassword" type="password" class="comment-input" placeholder="Password">
+      <div *ngIf="
+      registerForm.controls.confirmPassword.invalid &&
+      (registerForm.controls.confirmPassword.touched ||
+        registerForm.controls.confirmPassword.dirty)">
+        <p class="message-error" *ngIf="registerForm.controls.confirmPassword?.errors.required">
+          *Confirm password is required!
+        </p>
+        <p class="message-error" *ngIf="registerForm.controls.confirmPassword?.errors.confirmedValidator">
+          *Cofirm password doesn't match!
+        </p>
+      </div>
     </div>
     <div class="form-comment">
       <input type="checkbox">
       <span>I accept <a href=""> Terms And Condition</a></span>
     </div>
     <div class="form-comment">
-      <button class="btn-comment">Sign In</button>
+      <button type="button" class="btn btn-comment" [disabled]="registerForm.invalid" (click)="reg()">
+        Register
+      </button>
     </div>
   </form>
 </div>

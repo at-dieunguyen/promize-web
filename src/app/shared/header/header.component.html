@@ -2,16 +2,18 @@
   <div class="container">
     <div class="header-hidden">
       <div class="login">
-        <a class="header-icon" (click)="showModalLogin()"><i class="fas fa-sign-in-alt"></i>Login</a>
-        <a class="header-icon" (click)="showModalRegister()"><i class="fas fa-user"></i>Register</a>
+        <a  *ngIf="!isLogin" class="header-icon" (click)="showModalLogin()"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a  *ngIf="!isLogin" class="header-icon" (click)="showModalRegister()"><i class="fas fa-user"></i>Register</a>
+        <a  *ngIf="isLogin" class="header-icon"><i class="fas fa-user"></i> {{ currentEmail.email }}</a>
       </div>
       <div class="socials">
         <ul class="top-socials">
-          <li><a class="header-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a class="header-icon" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="header-icon" href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a class="header-icon" href="#"><i class="fab fa-dribbble"></i></a></li>
-          <li><a class="header-icon" href="#"><i class="fab fa-vimeo-v"></i></a></li>
+          <li><a *ngIf="!isLogin" class="header-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a *ngIf="!isLogin" class="header-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a *ngIf="!isLogin" class="header-icon" href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a *ngIf="!isLogin" class="header-icon" href="#"><i class="fab fa-dribbble"></i></a></li>
+          <li><a *ngIf="!isLogin" class="header-icon" href="#"><i class="fab fa-vimeo-v"></i></a></li>
+          <a  *ngIf="isLogin" class="header-icon" (click)="logOut()"><i class="fas fa-sign-out-alt"></i>Log out</a>
         </ul>
       </div>
     </div>

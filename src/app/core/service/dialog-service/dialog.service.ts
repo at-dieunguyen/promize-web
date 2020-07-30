@@ -1,7 +1,7 @@
-import { DialogRegisterComponent } from './../shared/dialog-register/dialog-register.component';
+import { DialogRegisterComponent } from '../../../shared/dialog-register/dialog-register.component';
 import { Injectable } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DialogLoginComponent } from '../shared/dialog-login/dialog-login.component';
+import { DialogLoginComponent } from '../../../shared/dialog-login/dialog-login.component';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class DialogService {
     //defaultConfigRegister
     this.defaultConfigRegister.disableClose = true;
     this.defaultConfigRegister.width = '500px';
-    this.defaultConfigRegister.height = '595px';
+    this.defaultConfigRegister.height = '590px';
   }
   loginDialog(options?: any) {
     // this.defaultConfig.data = {

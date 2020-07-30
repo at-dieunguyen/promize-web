@@ -7,21 +7,43 @@
           <span>x</span>
         </button>
       </div>
-      <form action="" class="form">
+      <form [formGroup]="loginForm" class="form">
         <div class="form-comment">
+          <p class="message-error error-login" *ngIf="notification === -1">User name or password wrong!!!</p>
           <h6>Email</h6>
-          <input type="text" class="comment-input" placeholder="Email">
+          <input formControlName="email" type="text" class="comment-input" placeholder="Email">
+          <div *ngIf="
+          loginForm.controls.email.invalid &&
+          (loginForm.controls.email.touched ||
+            loginForm.controls.email.dirty)">
+            <p class="message-error" *ngIf="loginForm.controls.email?.errors.required">
+              *Email is required!
+            </p>
+            <p class="message-error" *ngIf="loginForm.controls.email?.errors.email">
+              *Invalid email!
+            </p>
+          </div>
         </div>
         <div class="form-comment">
           <h6>Password</h6>
-          <input type="text" class="comment-input" placeholder="Password">
+          <input formControlName="password" type="password" class="comment-input" placeholder="Password">
+          <div *ngIf="
+          loginForm.controls.password.invalid &&
+          (loginForm.controls.password.touched ||
+            loginForm.controls.password.dirty)">
+            <p class="message-error" *ngIf="loginForm.controls.password?.errors.required">
+              *Password is required!
+            </p>
+          </div>
         </div>
         <div class="form-comment">
           <input type="checkbox">
           <span>Remember me</span>
         </div>
         <div class="form-comment">
-          <button class="btn-comment">Sign In</button>
+          <button type="button" class="btn btn-comment" [disabled]="loginForm.invalid" (click)="login()">
+            Login
+          </button>
         </div>
       </form>
     </div>
