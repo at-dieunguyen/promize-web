@@ -1,0 +1,111 @@
+<div class="header-top" *ngIf="isHome">
+  <div class="container">
+    <div class="header-hidden">
+      <div class="login">
+        <a class="header-icon" routerLink="/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a class="header-icon" routerLink="/register"><i class="fas fa-user"></i>Register</a>
+      </div>
+      <div class="socials">
+        <ul class="top-socials">
+          <li><a class="header-icon" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a class="header-icon" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="header-icon" href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="header-icon" href="#"><i class="fab fa-dribbble"></i></a></li>
+          <li><a class="header-icon" href="#"><i class="fab fa-vimeo-v"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<header class="page-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a routerLink="/main"><img src="./assets/img/logo.png" class="img-logo navbar-brand" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav nav">
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                HOME
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Muti page home</a>
+                <a href="" class="dropdown-item">One page home</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                PAGE
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">About us</a>
+                <a href="" class="dropdown-item">Contact</a>
+                <a href="" class="dropdown-item">Services</a>
+                <a href="" class="dropdown-item">Info</a>
+                <a href="" class="dropdown-item">FAQ</a>
+                <a href="" class="dropdown-item">Pricing</a>
+                <a href="" class="dropdown-item">Comingsoon</a>
+                <a href="" class="dropdown-item">Maintances</a>
+                <a href="" class="dropdown-item">Team</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                PORTFOLIO
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Default work</a>
+                <a href="" class="dropdown-item">Grid word</a>
+                <a href="" class="dropdown-item">Full width work</a>
+                <a href="" class="dropdown-item">Single work</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                BLOG & NEWS
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item" routerLink="/blogtwocolumn">Blog 2 column</a>
+                <a href="" class="dropdown-item" routerLink="/blogsingger">Singer Blog</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                SHORTCODE
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Blog</a>
+                <a href="" class="dropdown-item">Blog</a>
+                <a href="" class="dropdown-item">Blog</a>
+                <a href="" class="dropdown-item">Left Sidebar</a>
+                <a href="" class="dropdown-item">Right Sidebar</a>
+                <a href="" class="dropdown-item">Full width</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                SHOP
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item" routerLink="/shopcart">Shop Cart</a>
+                <a href="" class="dropdown-item" routerLink="/singerproduct">Singer Product</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="nav-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="nav-link">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</header>

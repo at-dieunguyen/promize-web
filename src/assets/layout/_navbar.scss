@@ -1,0 +1,26 @@
+.navbar-toggler {
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar {
+  @include pxRem(padding, 16 0 !important);
+  .navbar-collapse {
+    justify-content: flex-end;
+    transition: all 1000ms ease !important;
+    .dropdown {
+      .dropdown-menu {
+        border: none;
+        border-top: 1px solid rgb(230, 230, 230);
+        .dropdown-item {
+          @include pxRem(font-size, 14);
+        }
+      }
+      &:hover .dropdown-menu {
+        @include pxRem(margin-top, 19);
+        display: block;
+      }
+    }
+  }
+}

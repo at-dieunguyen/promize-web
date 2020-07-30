@@ -1,0 +1,98 @@
+.footer-carousel {
+  @include pxRem(padding, 50 0);
+  background-color: #f7f7f7;
+}
+.slick-slide {
+  outline: none;
+}
+.slick-prev, .slick-next {
+  display: none !important;
+}
+.section-footer {
+  background-color: #3e3e3e;
+  .footer-top {
+    @include pxRem(padding, 32 0);
+    .footer-contact {
+    @include pxRem(margin, 8 0);
+      display: flex;
+      color: #adb5bd;
+      align-items: center;
+      & > .contact-icon > i {
+        font-size: 25px;
+        margin-right: 8px;
+      }
+      .contact-title {
+        @include pxRem(margin, 0);
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+  .footer-main {
+    @include pxRem(padding, 48 0);
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+  }
+  .footer-bot {
+    color: #adb5bd;
+    .footer-copyright {
+      @include pxRem(margin-bottom, 0);
+      @include pxRem(padding, 40 0);
+      text-align: center;
+      & > i {
+        @include pxRem(margin-left, 5);
+        color: #ff0000;
+      }
+    }
+  }
+}
+
+.footer-introduct {
+  color: #adb5bd;
+  .introduct-text {
+    @include pxRem(margin, 24 0 16 0);
+  }
+  .introduct-list {
+    .list-social {
+      display: inline-flex;
+      .list-icon {
+        @include pxRem(margin-right, 8);
+        .list-link {
+          @include pxRem(margin-right, 5);
+          @include pxRem(font-size, 15);
+          color: #adb5bd;
+          border: 1px solid #adb5bd;
+          display: inline-block;
+          height: 32px;
+          text-align: center;
+          width: 32px;
+          border-radius: 50px;
+          & > i {
+            @include pxRem(margin-top, 6);
+            color: #adb5bd;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-title {
+  @include pxRem(margin-bottom, 24);
+  @include pxRem(font-size, 18);
+  font-family: "Raleway", sans-serif;
+  color: #f8f8f8;
+}
+.footer-list {
+  .footer-item { 
+    @include pxRem(padding, 7 0);
+    & > .footer-link {
+      color: #adb5bd;
+      & > i {
+        @include pxRem(margin-right, 8);
+      }
+    }
+    &:first-child {
+      padding-top: 0px;
+    }
+  }
+}

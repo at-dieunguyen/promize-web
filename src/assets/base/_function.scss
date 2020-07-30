@@ -1,0 +1,24 @@
+$colum:12;
+// $padding:30px;
+
+@mixin col-x {
+  @for $i from 1 to 12 {
+    .col-#{$i} {
+      flex: 0 0 calc(#{$i} / #{$colum} * 100%);
+      max-width: calc(#{$i} / #{$colum} * 100%);
+    }
+
+    .col-#{$i},
+    .col-auto,
+    .col-sm-#{$i},
+    .col-sm-auto,
+    .col-md-#{$i},
+    .col-md-auto,
+    .col-xl-#{$i},
+    .col-xl-auto {
+      position: relative;
+      width: 100%;
+      // padding: 15px;
+    }
+  }
+}

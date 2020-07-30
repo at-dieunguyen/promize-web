@@ -1,0 +1,18 @@
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden !important;
+  font-size: 16px;
+  color: #3e3e3e;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
