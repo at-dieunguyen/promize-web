@@ -1,10 +1,11 @@
 import { FooterTopModule } from './../footer-top/footer-top.module';
 import { CarouselModule } from './../carousel/carousel.module';
-import { CarouselComponent } from './../carousel/carousel.component';
 import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -14,7 +15,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     MainRoutingModule,
     CarouselModule,
-    FooterTopModule
+    FooterTopModule,
+    HttpClientModule
   ]
 })
 export class MainModule { }

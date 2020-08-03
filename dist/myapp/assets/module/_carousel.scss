@@ -192,18 +192,20 @@
   color: #ffffff;
   text-align: center;
   transform: translateY(-50%);
+  .carousel-title {
+    @include pxRem(margin-bottom, 16);
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+  }
+  .carousel-content {
+    @include pxRem(padding-bottom, 16);
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto !important;
+  }
 }
-.carousel-title {
-  @include pxRem(margin-bottom, 16);
-  font-family: "Raleway", sans-serif;
-  font-size: 40px;
-}
-.carousel-content {
-  @include pxRem(padding-bottom, 16);
-  font-size: 17px;
-  max-width: 700px;
-  margin: 0 auto !important;
-}
+
+
 //Slider
 .slider {
   width: 50%;

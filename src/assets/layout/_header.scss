@@ -10,9 +10,10 @@
 .header-icon {
   @include pxRem(padding-right, 10);
   font-size: 13px;
-  color: white;
+  color: #ffffff !important;
+  cursor: pointer;
   &:hover {
-    color: #1abc9c;
+    color: #1abc9c !important;
   }
   > i {
     @include pxRem(margin-right, 8);

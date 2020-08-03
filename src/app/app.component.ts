@@ -1,3 +1,4 @@
+import { AngularFireDatabase } from '@angular/fire/database';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  users: any;
+
+  constructor(
+    db: AngularFireDatabase,
+    ) {
+    // db.list('/user').valueChanges().subscribe(
+    //   data => {
+    //     this.users = data;
+    //     console.log(this.users[0]);
+    //   })
+    
+  }
+
+  ngOnInit(): void {
+  
+ }
 }
