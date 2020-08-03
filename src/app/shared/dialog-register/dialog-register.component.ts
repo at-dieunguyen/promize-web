@@ -2,6 +2,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators, EmailValidator } from '@angular/forms';
+import { DialogService } from 'src/app/core/service/dialog-service/dialog.service';
 
 export interface User {
   firstname: string,
@@ -22,7 +23,9 @@ export class DialogRegisterComponent implements OnInit {
     private db: AngularFireDatabase,
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<DialogRegisterComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private dialogService: DialogService,
+
   ) { }
 
   ngOnInit(): void {
@@ -53,6 +56,7 @@ export class DialogRegisterComponent implements OnInit {
     this.db.list('user').push(this.user);
     alert('Your account has been successfully registered');
     this.dialogRef.close('no')
+    this.dialogService.loginDialog();
   }
 
   close() {
